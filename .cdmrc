@@ -9,6 +9,6 @@ run-button: >
   java -cp . P3.ui.MainUI
 
 terminals:
-  - ["javac MainUI.java && java MainUI"]
+  - javac P3/model/*.java P3/repo/*.java P3/service/*.java P3/ui/MainUI.java && java -cp . P3.ui.MainUI
 
 playground-view: terminal-editor
